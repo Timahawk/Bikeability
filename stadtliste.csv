@@ -1,0 +1,34 @@
+﻿cityname;schemaname;Einwohner;Bundesland;filename;pfadname;Berechnet
+Düsseldorf;düsseldorf;619.477;Nordrhein-Westfalen;duesseldorf-regbez-latest.osm.pbf;./data/duesseldorf-regbez-latest.osm.pbf;
+Dortmund;dortmund;586.852;Nordrhein-Westfalen;arnsberg-regbez-latest.osm.pbf;./data/arnsberg-regbez-latest.osm.pbf;
+Essen;essen;579.432;Nordrhein-Westfalen;duesseldorf-regbez-latest.osm.pbf;./data/duesseldorf-regbez-latest.osm.pbf;
+Bremen;bremen;563.290;Bremen;bremen-latest.osm.pbf;./data/bremen-latest.osm.pbf;
+Dresden;dresden;555.351;Sachsen;sachsen-latest.osm.pbf;./data/sachsen-latest.osm.pbf;
+Region Hannover;hannover;535.932;Niedersachsen;niedersachsen-latest.osm.pbf;./data/niedersachsen-latest.osm.pbf
+Nürnberg;nürnberg;510.632;Bayern;mittelfranken-latest.osm.pbf;./data/mittelfranken-latest.osm.pbf;
+Duisburg;duisburg;495.152;Nordrhein-Westfalen;duesseldorf-regbez-latest.osm.pbf;./data/duesseldorf-regbez-latest.osm.pbf;
+Bochum;bochum;363.441;Nordrhein-Westfalen;arnsberg-regbez-latest.osm.pbf;./data/arnsberg-regbez-latest.osm.pbf;
+Wuppertal;wuppertal;354.572;Nordrhein-Westfalen;duesseldorf-regbez-latest.osm.pbf;./data/duesseldorf-regbez-latest.osm.pbf;
+Bielefeld;bielefeld;334.002;Nordrhein-Westfalen;detmold-regbez-latest.osm.pbf;./data/detmold-regbez-latest.osm.pbf;
+Bonn;bonn;331.885;Nordrhein-Westfalen;koeln-regbez-latest.osm.pbf;./data/koeln-regbez-latest.osm.pbf;
+Münster;münster;317.713;Nordrhein-Westfalen;muenster-regbez-latest.osm.pbf;./data/muenster-regbez-latest.osm.pbf;
+Mannheim;mannheim;311.831;Baden-Württemberg;karlsruhe-regbez-latest.osm.pbf;./data/karlsruhe-regbez-latest.osm.pbf;
+Karlsruhe;karlsruhe;306.502;Baden-Württemberg;karlsruhe-regbez-latest.osm.pbf;./data/karlsruhe-regbez-latest.osm.pbf;
+Augsburg;augsburg;296.478;Bayern;schwaben-latest.osm.pbf;./data/schwaben-latest.osm.pbf;
+Wiesbaden;wiesbaden;278.950;Hessen;hessen-latest.osm.pbf;./data/hessen-latest.osm.pbf;
+Mönchengladbach;mönchengladbach;261.001;Nordrhein-Westfalen;duesseldorf-regbez-latest.osm.pbf;./data/duesseldorf-regbez-latest.osm.pbf;
+Gelsenkirchen;gelsenkirchen;260.126;Nordrhein-Westfalen;muenster-regbez-latest.osm.pbf;./data/muenster-regbez-latest.osm.pbf;
+Städteregion Aachen;aachen;249.070;Nordrhein-Westfalen;koeln-regbez-latest.osm.pbf;./data/koeln-regbez-latest.osm.pbf;
+Braunschweig;braunschweig;248.823;Niedersachsen;niedersachsen-latest.osm.pbf;./data/niedersachsen-latest.osm.pbf;
+Kiel;kiel;246.243;Schleswig-Holstein;schleswig-holstein-latest.osm.pbf;./data/schleswig-holstein-latest.osm.pbf;
+Chemnitz;chemnitz;243.105;Sachsen;sachsen-latest.osm.pbf;./data/sachsen-latest.osm.pbf;
+Halle (Saale);halle;238.061;Sachsen-Anhalt;sachsen-anhalt-latest.osm.pbf;./data/sachsen-anhalt-latest.osm.pbf;
+Magdeburg;magdeburg;236.188;Sachsen-Anhalt;sachsen-anhalt-latest.osm.pbf;./data/sachsen-anhalt-latest.osm.pbf;
+Freiburg im Breisgau;freiburg;231.848;Baden-Württemberg;karlsruhe-regbez-latest.osm.pbf;./data/karlsruhe-regbez-latest.osm.pbf;
+Krefeld;krefeld;227.050;Nordrhein-Westfalen;duesseldorf-regbez-latest.osm.pbf;./data/duesseldorf-regbez-latest.osm.pbf;
+Mainz;mainz;217.556;Rheinland-Pfalz;rheinland-pfalz-latest.osm.pbf;./data/rheinland-pfalz-latest.osm.pbf;
+Lübeck;lübeck;216.277;Schleswig-Holstein;schleswig-holstein-latest.osm.pbf;./data/schleswig-holstein-latest.osm.pbf;
+Erfurt;erfurt;213.227;Thüringen;thueringen-latest.osm.pbf;./data/thueringen-latest.osm.pbf;
+Oberhausen;oberhausen;208.752;Nordrhein-Westfalen;duesseldorf-regbez-latest.osm.pbf;./data/duesseldorf-regbez-latest.osm.pbf;
+Rostock;rostock;208.400;Mecklenburg-Vorpommern;mecklenburg-vorpommern-latest.osm.pbf;./data/mecklenburg-vorpommern-latest.osm.pbf;
+Kassel;kassel;200.406;Hessen;hessen-latest.osm.pbf;./data/hessen-latest.osm.pbf;

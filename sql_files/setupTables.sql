@@ -1,0 +1,8 @@
+ALTER TABLE :v1.world_line ADD COLUMN line_id bigint NOT NULL GENERATED ALWAYS AS IDENTITY; 
+ALTER TABLE :v1.world_line ADD PRIMARY KEY (line_id);
+
+ALTER TABLE :v1.world_point ADD COLUMN point_id bigint NOT NULL GENERATED ALWAYS AS IDENTITY;
+ALTER TABLE :v1.world_point ADD PRIMARY KEY (point_id);
+
+ALTER TABLE :v1.world_polygon ADD COLUMN poly_id bigint NOT NULL GENERATED ALWAYS AS IDENTITY;
+ALTER TABLE :v1.world_polygon ADD PRIMARY KEY (poly_id); 

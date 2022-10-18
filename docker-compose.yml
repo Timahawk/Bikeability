@@ -1,0 +1,85 @@
+# Version of docker compose used
+version: "3.9"
+# List of all used services
+services:
+
+  
+  traefik: # Name of the image / container
+    # Prebuild image version 2.8 pulled from hub.docker.com
+    image: "traefik:v2.8"
+    # Parameters specifiying behaviour
+    command:
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+    # Ports open outside the docker application
+    ports:
+      - "80:80" # Routes to brouter
+      - "8080:8080" # Used to monitor load
+    # Allows access to socket.
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+
+
+  brouter: # Name of the image
+    build: brouter/. # Refers to Dockerfile in subfolder brouter
+    # Used to share .rd5 files with Windows File System
+    volumes:
+      - ./brouter/segments4:/var/www/brouter/misc/segments4
+    # Parameters specifiying behaviour
+    labels:
+    - "traefik.enable=true"
+    - "traefik.http.routers.brouter1.rule=Path(`/brouter`)"
+    # Specifies number of instances.
+    deploy:
+      replicas: 3
+
+
+  postgis:
+    image: postgis/postgis
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    volumes: 
+      - db:/var/lib/postgresql/data
+      - ./sql_files:/home/sqlfiles
+
+
+  go_generate_routes:
+    build: go_version/.
+    volumes:
+      - ./go_version:/var/www/go_version
+      - type: bind
+        source: ./config.env
+        target: /var/www/go_version/config.env
+    depends_on:
+      - traefik
+      - brouter
+      - postgis
+
+  go_result:
+    build: go_result/.
+    volumes:
+      - ./go_result:/var/www/go_result
+    depends_on:
+      - postgis
+
+
+  osm2pg:
+    build: osm2postgis/.
+    volumes:
+      - ./data:/var/www/osm2postgis/data
+    # - type: bind
+    #   source: ../data/schwaben-latest.osm.pbf
+    #   target: /var/www/osm2postgis/schwaben-latest.osm.pbf
+      # source: ../../data/osm_pbf_files/ # /schwaben-latest.osm.pbf
+      # target: /var/www/osm2postgis/ # /schwaben-latest.osm.pbf
+    depends_on:
+    - postgis
+
+volumes:
+  db:
+    driver: local
+
+  
